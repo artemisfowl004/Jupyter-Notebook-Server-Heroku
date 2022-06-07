@@ -1,4 +1,5 @@
 FROM artemisfowl004/jupyter
+RUN apt update ; apt install gcc
 RUN mkdir /JupyterNotebooks
 COPY JupyterNotebooks /JupyterNotebooks
 COPY jupyter.py /conf/jupyter.py
